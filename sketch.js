@@ -1,10 +1,12 @@
 var blob;
 
 function setup() {
-    createCanvas(1920,1080);
+    createCanvas(600,600);
     blob = new Blob();
 }
 
 function draw() {
     background(0);
+    blob.show();
+
 }
