@@ -1,8 +1,9 @@
 var blob;
-
+var blobs = [];
 function setup() {
     createCanvas(600,600);
     blob = new Blob();
+    
 }
 
 function draw() {
