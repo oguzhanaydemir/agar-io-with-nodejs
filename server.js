@@ -2,15 +2,19 @@ var express = require('express');
 
 var app = express();
 
-var server = app.listen(3000);
+var server = app.listen(process.env.PORT || 3000,listen);
+
+function listen() {
+    var host = server.address().address;
+    var port = server.adress().port;
+    console.log('Server http://' + host + ":" + port + "adresinde çalışıyor");
+}
 
 app.use(express.static('public'));
 
-console.log("Server 3000 numaralı portta çalışıyor");
 
-var socket = require('socket.io');
 
-var io = socket(server);
+var io = require('socket.io')(server);
 
 io.sockets.on('connection',newConnection);
 
