@@ -12,6 +12,7 @@ function setup() {
 function draw() {
     background(0);
     blob.show();
+    blob.update();
     for(var i =0;i<blobs.length;i++){
         blobs[i].show();
     }
