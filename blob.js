@@ -1,4 +1,4 @@
-function Blob() {
+function Blob(x,y,r) {
     this.pos = createVector(width/2 , height/2);
     this.r=64;
 
