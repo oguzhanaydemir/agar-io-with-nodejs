@@ -1,0 +1,26 @@
+{
+  "name": "agar-io-with-nodejs",
+  "version": "1.0.0",
+  "description": "Improved agar.io with nodejs",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.4",
+    "nodemon": "^1.12.1",
+    "socket.io": "^2.0.3"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oguzhanaydemir/agar-io-with-nodejs.git"
+  },
+  "bugs": {
+    "url": "https://github.com/oguzhanaydemir/agar-io-with-nodejs/issues"
+  },
+  "homepage": "https://github.com/oguzhanaydemir/agar-io-with-nodejs#readme"
+}

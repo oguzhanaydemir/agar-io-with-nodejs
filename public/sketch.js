@@ -5,6 +5,7 @@ var zoom = 1;
 
 function setup() {
     createCanvas(600, 600);
+    socket=io.connect('http://localhost:3000');
     blob = new Blob(0, 0, 64);
     for (var i = 0; i < 200; i++) {
         var x = random(-width,width);
@@ -14,7 +15,7 @@ function setup() {
 }
 
 function draw() {
-    background(0);
+    background(100);
 
     translate(width/2, height/2);
     var newzoom = 64 / blob.r;
